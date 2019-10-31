@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/filter_hanbok_border_gray"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="2dp">
+
+    <LinearLayout
+            android:id="@+id/ll_rv_item_filter_overview"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            // 한복 이미지
+            <ImageView
+                    android:id="@+id/img_rv_item_filter_overview_hanbok"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"/>
+            // 무궁화
+            <ImageView
+                    android:id="@+id/img_rv_item_filter_overview_like_sharon"
+                    android:layout_width="26dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/sharon_selector"/>
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/txt_rv_item_filter_overview_hanbok_name"
+                android:text="한복 이름"
+                android:textSize="13sp"
+                android:textColor="#656565"
+                android:fontFamily="@font/nanum_square_bold"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="6dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+        />
+        <TextView
+                android:id="@+id/txt_rv_item_filter_overview_market_name"
+                android:text="마켓 이름"
+                android:textColor="#8d8d8d"
+                android:textSize="10sp"
+                android:fontFamily="@font/nanum_square_bold"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <View
+                android:background="#d8d8d8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp">
+            <TextView
+                    android:id="@+id/txt_rv_item_filter_overview_rent_time"
+                    android:text="4"
+                    android:textSize="10sp"
+                    android:textColor="#828384"
+                    android:fontFamily="@font/nanum_gothic_light"
+                    android:layout_toStartOf="@id/txt_rv_item_filter_overview_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+            <TextView
+                    android:id="@+id/txt_rv_item_filter_overview_time"
+                    android:text="시간"
+                    android:textSize="10sp"
+                    android:textColor="#828384"
+                    android:layout_marginRight="6dp"
+                    android:fontFamily="@font/nanum_gothic_light"
+                    android:layout_toStartOf="@id/txt_rv_item_filter_overview_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+            <TextView
+                    android:id="@+id/txt_rv_item_filter_overview_price"
+                    android:text="가격"
+                    android:textSize="13sp"
+                    android:textColor="#656565"
+                    android:fontFamily="@font/nanum_square_bold"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

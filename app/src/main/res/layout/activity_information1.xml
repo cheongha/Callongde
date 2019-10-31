@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+    <LinearLayout
+            android:id="@+id/info1_mian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            <ImageView
+                    android:id="@+id/btn_info1_back"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/infowear_top_back_icon"></ImageView>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="한복"
+                        android:textColor="#eb5f4c"
+                        android:textSize="18sp"></TextView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 옷고름 "
+                        android:textColor="#eb5f4c"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="매는 법"
+                        android:textColor="#eb5f4c"
+                        android:textSize="18sp"></TextView>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#eb5e4d"></View>
+
+        </RelativeLayout>
+
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="9dp">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <ImageView
+                                    android:layout_width="228dp"
+                                    android:layout_height="228dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="7dp"
+                                    android:contentDescription="@string/hanbock_info1"
+                                    android:src="@drawable/info_wear_1"></ImageView>
+
+                            <ImageView
+                                    android:layout_width="228dp"
+                                    android:layout_height="228dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="7dp"
+                                    android:contentDescription="@string/hanbock_info1"
+                                    android:src="@drawable/info_wear_2"></ImageView>
+
+                            <ImageView
+                                    android:layout_width="228dp"
+                                    android:layout_height="228dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="7dp"
+                                    android:contentDescription="@string/hanbock_info1"
+                                    android:src="@drawable/info_wear_3"></ImageView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="16dp"
+                                android:layout_marginTop="9dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="7sp"
+                                    android:text="예로부터 선조들의"
+                                    android:textColor="#494949"
+                                    android:textSize="14sp"></TextView>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="7sp"
+                                    android:text=" 여유"
+                                    android:textColor="#494949"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"></TextView>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="7sp"
+                                    android:text="와 "
+                                    android:textColor="#494949"
+                                    android:textSize="14sp"></TextView>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="7sp"
+                                    android:text=" 멋"
+                                    android:textColor="#494949"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"></TextView>
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="7sp"
+                                    android:text="을 담은 옷고름"
+                                    android:textColor="#494949"
+                                    android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="16dp"
+                                android:layout_marginVertical="9dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="7sp"
+                                android:text="이를 어떻게 매는지 어려하는 분들이 많으신데요. \n어떻게 옷고름을 예쁘게 매는 법 알아보아요."
+                                android:textColor="#494949"
+                                android:textSize="14sp"></TextView>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="#ededed"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/gradation"
+                            android:gravity="center"
+                            android:text="@string/info1_con_title"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"></TextView>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="6dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/info1_step1"
+                                android:textColor="#f2893e"
+                                android:textSize="14sp"></TextView>
+                        //round
+
+                        <ImageView
+                                android:layout_width="328dp"
+                                android:layout_height="216dp"
+                                android:layout_gravity="center"
+                                android:layout_marginVertical="4dp"
+                                android:src="@drawable/info_wear_4"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="6sp"
+                                android:text="오른쪽의 짧은 고름을 왼쪽의 긴 고름 위에 걸쳐 주세요."
+                                android:textColor="#494949"
+                                android:textSize="12sp"></TextView>
+                    </LinearLayout>
+                    //1단계
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="6dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/info1_step2"
+                                android:textColor="#f2893e"
+                                android:textSize="14sp"></TextView>
+
+                        <ImageView
+                                android:layout_width="328dp"
+                                android:layout_height="216dp"
+                                android:layout_gravity="center"
+                                android:layout_marginVertical="4dp"
+                                android:src="@drawable/info_wear_5"></ImageView>
+                        //round
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="6sp"
+                                android:text="걸친 짧은 고름을 긴 고름 밑으로 넣어 위로 감아서 빼줍니다."
+                                android:textColor="#494949"
+                                android:textSize="12sp"></TextView>
+                    </LinearLayout>
+                    //2단계
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="6dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/info1_step3"
+                                android:textColor="#f2893e"
+                                android:textSize="14sp"></TextView>
+                        //round
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="216dp"
+                                android:layout_marginVertical="4dp"
+                                android:src="@drawable/info_wear_6"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="6sp"
+                                android:text="아래쪽 긴 고름으로 바라본 모양으로 만든 후 위쪽의 짧은 고름을 \n밑으로 해줍니다."
+                                android:textColor="#494949"
+                                android:textSize="12sp"></TextView>
+                    </LinearLayout>
+                    //3단계
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="6dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/info1_step4"
+                                android:textColor="#f2893e"
+                                android:textSize="14sp"></TextView>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="216dp"
+                                android:layout_marginVertical="4dp"
+                                android:src="@drawable/info_wear_7"></ImageView>
+                        //round
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="6sp"
+                                android:text="왼손을 가지고 긴 고름을 잡고, 오른손은 짧은 고름을 밑으로 넣어서 \n위로 잡아 빼주세요."
+                                android:textColor="#494949"
+                                android:textSize="12sp"></TextView>
+                    </LinearLayout>
+                    //4단계
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="6dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/info1_step5"
+                                android:textColor="#f2893e"
+                                android:textSize="14sp"></TextView>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="216dp"
+                                android:layout_marginVertical="4dp"
+                                android:src="@drawable/info_wear_8"></ImageView>
+                        //round
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="6sp"
+                                android:text="아래 위로 가볍게 잡아당기면서 완성된 모양으로 만들어줍니다."
+                                android:textColor="#494949"
+                                android:textSize="12sp"></TextView>
+                    </LinearLayout>
+                    //5단계
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="6dp"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/info1_step6"
+                                android:textColor="#f2893e"
+                                android:textSize="14sp"></TextView>
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="216dp"
+                                android:layout_marginVertical="4dp"
+                                android:src="@drawable/info_wear_9"></ImageView>
+                        //round
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="14dp"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="6sp"
+                                android:text="아래로 자연스럽게 떨어진 고름과 짧을 고름의 길이 차이가 \n약 5-7cm 정도로 정돈해주면 예쁜 옷고름이 완성!"
+                                android:textColor="#494949"
+                                android:textSize="12sp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

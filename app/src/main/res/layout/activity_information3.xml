@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:context=".infomation.InformationActivity3">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:id="@+id/btn_info3_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/infowear_top_back_icon"></ImageView>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="한복에 함꼐 하면 "
+                    android:textColor="#eb5f4c"
+                    android:textSize="18sp"></TextView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="예쁜 머리 장신구"
+                    android:textColor="#eb5f4c"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#eb5e4d"></View>
+    </RelativeLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="vertical">
+
+                <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="9dp">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="228dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="7dp"
+                                android:src="@drawable/info_hair_1"></ImageView>
+
+                        <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="228dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="7dp"
+                                android:src="@drawable/info_hair_2"></ImageView>
+
+                        <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="228dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="7dp"
+                                android:src="@drawable/info_hair_3"></ImageView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="7sp"
+                        android:text="한복 입고 예쁜 머리를 하면 \n인생 샷 건지는 것은 식은 죽 먹기!\n그 몇 가지 방법 지금 알려줄게!"
+                        android:textColor="#494949"
+                        android:textSize="14sp" />
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="#ededed"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="기품의 상징, 비녀"
+                                android:textColor="#eb5e4d"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+                    </LinearLayout>
+                    //오전 글씨 부분
+                    //ViewPager
+
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_info3_content1"
+                            android:layout_width="328dp"
+                            android:layout_height="216dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp">
+
+                    </android.support.v4.view.ViewPager>
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="6sp"
+                            android:text="한복 머리 스타일하면 \n단연코 먼저 떠오르는 비녀!\n요즘은 일상에서 현대적으로 매치해도 너무 예뻐!\n중간 또는 긴 머리라면 한번 도전해보는게 어떨까?"
+                            android:textColor="#494949"
+                            android:textSize="12sp"></TextView>
+                </LinearLayout>
+                //오전
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="단발 머리 스타일"
+                                android:textColor="#eb5e4d"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+                    </LinearLayout>
+                    //오후 글씨 부분
+                    //ViewPager
+
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_info3_content2"
+                            android:layout_width="328dp"
+                            android:layout_height="216dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"></android.support.v4.view.ViewPager>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="6sp"
+                            android:text="비녀를 못해서 아쉬움은 집어넣어!\n예쁜 삔을 꽃아 귀여움을 더하거나\n헤어밴드를 해서 청순함을 더하거나\n편안한 머리띠를 하면 너도 인생샷 획득!"
+                            android:textColor="#494949"
+                            android:textSize="12sp"></TextView>
+                </LinearLayout>
+                //오후
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="머리땋기"
+                                android:textColor="#eb5e4d"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+                    </LinearLayout>
+                    //저녁 글씨 부분
+                    //ViewPager
+
+                  <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_info3_content3"
+                            android:layout_width="328dp"
+                            android:layout_height="216dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp">
+
+                  </android.support.v4.view.ViewPager>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="6sp"
+                            android:text="짧은 머리든 긴 머리든 머리를 땋아서 \n단아한 스타일을 만들 수 있어!\n거기에 각종 삔이나 비녀를 더해주면\n뭔가 더 고풍스러움과 예쁨이 더해지겠지?"
+                            android:textColor="#494949"
+                            android:textSize="12sp"></TextView>
+                </LinearLayout>
+                //저녁
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

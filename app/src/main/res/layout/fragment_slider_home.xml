@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="328dp"
+        android:layout_height="148dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="8dp"
+        tools:context=".home.SliderHomeFragment">
+    <RelativeLayout
+            android:clipToPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/img_fragment_slider_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

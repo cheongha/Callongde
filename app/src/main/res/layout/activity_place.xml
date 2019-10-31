@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".survey.UserInfoActivity">
+
+    <TextView
+            android:id="@+id/btn_place_back"
+            android:text="뒤로가기"
+            android:textColor="#d8d8d8"
+            android:textSize="14sp"
+            android:fontFamily="@font/nanum_extra_bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <ImageView
+            android:id="@+id/btn_place_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            app:srcCompat="@drawable/searchask_x_icon"/>
+    <LinearLayout
+            android:id="@+id/ll_style"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:layout_centerHorizontal="true">
+        <TextView
+                android:text="네걸음"
+                android:textColor="#ed5f4c"
+                android:textSize="21sp"
+                android:fontFamily="@font/nanum_square_extra_bold"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="원하시는 장소를\n선택해주세요. (2곳 중)"
+                android:textColor="#494949"
+                android:textSize="21sp"
+                android:fontFamily="@font/nanum_square_regular"
+                android:lineHeight="33sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d8d8d8"
+                android:layout_marginBottom="46dp"/>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <ImageView
+                android:layout_marginHorizontal="52dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/searchask_3_map_icon"/>
+            <ImageView
+                    android:id="@+id/btn_place1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginLeft="95dp"
+                    app:srcCompat="@drawable/searchask_3_marking_gray_icon"
+                    />
+            <ImageView
+                    android:id="@+id/btn_place2"
+                    android:layout_marginTop="184dp"
+                    android:layout_marginLeft="106dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/searchask_3_marking_gray_icon"
+                    />
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/btn_place_next"
+                android:background="@drawable/filter_content_outcome_background"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:visibility="invisible"
+                android:layout_marginTop="48dp"
+                android:gravity="center">
+            <TextView
+                    android:text="나만의 한복 추천받기"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nanum_square_extra_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#d8d8d8"
+            android:layout_height="8dp">
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#a4eb5f4c"
+            android:layout_height="8dp">
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".survey.surveyoutcome.OutcomeFragment1">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="590dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal">
+            <ImageView
+                    android:src="@drawable/explain_point_gray_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+            <ImageView
+                    android:src="@drawable/explain_point_orange_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+            <ImageView
+                    android:src="@drawable/explain_point_gray_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+                android:text="당신을 위한 추천 한복 "
+                android:textColor="#eb5f4c"
+                android:textSize="21sp"
+                android:fontFamily="@font/nanum_square_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"/>
+        <TextView
+                android:text="이미지를 선택하면 해당 마켓으로 이동합니다."
+                android:textSize="14sp"
+                android:textColor="#494949"
+                android:fontFamily="@font/nanum_square_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

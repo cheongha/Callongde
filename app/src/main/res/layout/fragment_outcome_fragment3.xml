@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".survey.surveyoutcome.OutcomeFragment1">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="590dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal">
+            <ImageView
+                    android:src="@drawable/explain_point_gray_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+            <ImageView
+                    android:src="@drawable/explain_point_gray_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"/>
+            <ImageView
+                    android:src="@drawable/explain_point_orange_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+                android:text="깔롱드에서 다른 다양한 한복을 확인하실 수 있습니다."
+                android:textSize="14sp"
+                android:textColor="#494949"
+                android:fontFamily="@font/nanum_square_regular"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <RelativeLayout
+                android:id="@+id/btn_outcome_finish"
+                android:background="@drawable/filter_content_outcome_background"
+                android:layout_width="260dp"
+                android:layout_height="38dp"
+                android:gravity="center">
+            <TextView
+
+                    android:text="다른 한복 보러 가기"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nanum_square_extra_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

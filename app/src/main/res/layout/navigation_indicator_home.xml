@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/img_nav_indicator_home_1"
+            android:background="@drawable/orange_circle_border"
+            android:layout_height="6dp"
+            android:layout_width="6dp"
+            android:layout_marginHorizontal="6dp">
+    </ImageView>
+    <ImageView
+            android:id="@+id/img_nav_indicator_home_2"
+            android:background="@drawable/white_circle_border"
+            android:layout_height="6dp"
+            android:layout_width="6dp"
+            android:layout_marginHorizontal="6dp">
+    </ImageView>
+    <ImageView
+            android:id="@+id/img_nav_indicator_home_3"
+            android:background="@drawable/white_circle_border"
+            android:layout_height="6dp"
+            android:layout_width="6dp"
+            android:layout_marginHorizontal="6dp">
+    </ImageView>
+
+</LinearLayout>

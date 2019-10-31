@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bfffffff"
+        android:gravity="center"
+        tools:context=".survey.LoadingDialog">
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/gif_loading"
+                android:src="@drawable/searchask_3_sharon_icon"
+                android:layout_marginBottom="20dp"
+                android:layout_width="139dp"
+                android:layout_height="126dp"/>
+        <TextView
+                android:text="한복입기 동참중…"
+                android:textSize="14sp"
+                android:textColor="#eb5f4c"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView6"/>
+    </LinearLayout>
+</RelativeLayout>

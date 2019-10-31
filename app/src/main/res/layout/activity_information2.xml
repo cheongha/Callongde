@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:context=".infomation.InformationActivity2">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:id="@+id/btn_info2_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/infowear_top_back_icon"></ImageView>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="한복 입고 가기 좋은 "
+                    android:textColor="#eb5f4c"
+                    android:textSize="18sp"></TextView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="장소"
+                    android:textColor="#eb5f4c"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#eb5e4d"></View>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">//
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="vertical">
+
+                <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="9dp">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="228dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="7dp"
+                                android:src="@drawable/place_1"></ImageView>
+
+                        <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="228dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="7dp"
+                                android:src="@drawable/place_2"></ImageView>
+
+                        <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="228dp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="7dp"
+                                android:src="@drawable/place_3"></ImageView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="7sp"
+                        android:text="한복을 입고 가면 인생샷을 건지는 곳.\n 한복을 입고 잊지못할 추억을 쌓을 그 곳.\n 그 장소 추천 Top9!"
+                        android:textColor="#494949"
+                        android:textSize="14sp"></TextView>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="#ededed"></View>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="경복궁"
+                                android:textColor="#eb5e4d"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+                    </LinearLayout>
+                    //오전 글씨 부분
+                    //ViewPager
+
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_info2_moring"
+                            android:layout_width="328dp"
+                            android:layout_height="216dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="6sp"
+                            android:text="한복 입는 곳의 대표 장소, 경복궁!\n- 연인과 함께 거닐면 행복한 경복궁 \n- 친구와 함께 풋풋한 사진을 찍을 수 있는 경복궁\n- 가족과 추억을 쌓을 수 있는 경복궁\n경복궁에 너와 함께 해서 너무 좋다."
+                            android:textColor="#494949"
+                            android:textSize="12sp"></TextView>
+                </LinearLayout>
+                //오전
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="용인민속촌"
+                                android:textColor="#eb5e4d"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+                    </LinearLayout>
+                    //오후 글씨 부분
+                    //ViewPager
+
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_info2_afternoon"
+                            android:layout_width="328dp"
+                            android:layout_height="216dp"
+                            android:layout_marginHorizontal="16dp"></android.support.v4.view.ViewPager>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="6sp"
+                            android:text="하루는 한복입고 사극 속으로 빠져보자.\n- 거지를 추격하는 제 2의 추노, 민속촌\n- 사또와 함께 하는 관아 생활, 민속촌\n- 사기꾼인지 장사꾼인지 조심해, 민속촌!\n민속촌 재미와 함께 해서 너무 좋다."
+                            android:textColor="#494949"
+                            android:textSize="12sp"></TextView>
+                </LinearLayout>
+                //오후
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="전주 한옥마을"
+                                android:textColor="#eb5e4d"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        <ImageView
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/infoplace_point_orange_icon"></ImageView>
+                    </LinearLayout>
+                    //저녁 글씨 부분
+                    //ViewPager
+
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_info2_evening"
+                            android:layout_width="328dp"
+                            android:layout_height="216dp"
+                            android:layout_marginHorizontal="16dp">
+
+                    </android.support.v4.view.ViewPager>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="20dp"
+                            android:lineSpacingExtra="6sp"
+                            android:text="전주에는요!~\n- 예쁜 한옥도 있고요!\n- 몇 백년 역사도 있고요!\n- 맛있는 음식도 있어요!\n이런 전주 한옥마을 너와 함께 해서 너무 좋다!"
+                            android:textColor="#494949"
+                            android:textSize="12sp"></TextView>
+                </LinearLayout>
+                //저녁
+
+
+            </LinearLayout>
+            //
+        </LinearLayout>
+    </ScrollView>
+    //
+
+</LinearLayout>

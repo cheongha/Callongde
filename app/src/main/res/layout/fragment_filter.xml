@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:context=".filter.FilterFragment">
+
+    // 나만의 한복, 정렬
+
+    <LinearLayout
+            android:id="@+id/top_home_frag_align"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_square_extra_bold"
+                android:text="나만의 한복"
+                android:textColor="#f2893e"
+                android:textSize="10sp" />
+        <!--<View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#d8d8d8"
+                android:layout_marginHorizontal="4dp"/>
+        <TextView
+                android:text="낮은 가격 순"
+                android:textColor="#828384"
+                android:textSize="10sp"
+                android:fontFamily="@font/nanum_square_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+
+    // 내가 선택한 필터
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_filter_content_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="14dp"
+            android:background="#d8d8d8" />
+    // 한복 리싸이클러 뷰
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="8dp"
+            android:background="#ffffff"
+            android:gravity="center_horizontal">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_filter_overview_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+        <ImageView
+                android:id="@+id/btn_sharon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/filter_sharon_btn" />
+    </RelativeLayout>
+
+
+</LinearLayout>

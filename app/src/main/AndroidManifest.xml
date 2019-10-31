@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="android.callongde_android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".explainapp.ExplainAppActivity">
+        </activity>
+
+        <activity android:name=".main.MainActivity">
+        </activity>
+        <activity android:name=".question.QuestionActivity">
+        </activity>
+        <activity android:name=".notice.NoticeActivity">
+        </activity>
+        <activity android:name=".mysharon.MySharonActivity">
+        </activity>
+        <activity android:name=".search.SearchActivity">
+
+        </activity>
+        <activity android:name=".survey.OutcomeActivity">
+        </activity>
+        <activity android:name=".survey.PlaceActivity">
+
+        </activity>
+        <activity android:name=".survey.FeelActivity">
+        </activity>
+        <activity android:name=".survey.StyleActivity">
+        </activity>
+        <activity android:name=".survey.UserInfoActivity">
+        </activity>
+        <activity android:name=".infomation.InformationActivity3">
+        </activity>
+        <activity android:name=".infomation.InformationActivity2">
+        </activity>
+        <activity android:name=".infomation.InformationActivity1">
+        </activity>
+        <activity android:name=".choose.ChooseActivity">
+        </activity>
+        <activity android:name=".filter.FilterActivity">
+
+        </activity>
+    </application>
+
+</manifest>

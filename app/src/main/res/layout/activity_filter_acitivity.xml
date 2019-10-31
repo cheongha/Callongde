@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:context=".filter.FilterActivity">
+
+    <RelativeLayout
+            android:id="@+id/filter_tabbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/btn_filter_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/clickfilter_top_back_icon" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="16dp"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/nanum_square_extra_bold"
+                android:text="나만의 한복 필터"
+                android:textColor="#eb5f4c"
+                android:textSize="16sp" />
+
+        <ImageView
+                android:id="@+id/btn_filter_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/filter_service_icon" />
+    </RelativeLayout>
+
+    <View
+            android:id="@+id/filter_tabbar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/filter_tabbar"
+            android:background="#eb5f4c" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filter_tabbar_line"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:text="깔롱드가 제공하는 맞춤 필터로 원하는 한복을 찾아보세요."
+                android:textColor="#273152"
+                android:textSize="12sp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:text="(중복선택 및 원하는 질문만 응답 가능)"
+                android:textColor="#828384"
+                android:textSize="10sp" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="vertical">
+            // 성별
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:text="성별"
+                    android:textColor="#eb5f4c"
+                    android:textSize="14sp" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_male"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="남성"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_female"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="여성"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffd3d3" />
+            // 연령대
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:text="연령대"
+                    android:textColor="#eb5f4c"
+                    android:textSize="14sp" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_child"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_child"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="아동"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_adult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background">
+
+                    <TextView
+                            android:id="@+id/txt_filter_adult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginVertical="2dp"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="성인"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/filiter_content_orange_background">
+
+                    <TextView
+                            android:id="@+id/txt_filter_old"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginVertical="2dp"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="중년"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffd3d3" />
+            // 맵시
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:text="맵시"
+                    android:textColor="#eb5f4c"
+                    android:textSize="14sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_tradition"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_tradition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="16dp"
+                                android:layout_marginVertical="2dp"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="전통"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_modern"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_modern"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="현대"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_simple"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_simple"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="단아"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_fancy"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_fancy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="화려"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_comfortable"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_comfortable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_gothic_bold"
+                                android:text="편안"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_concept"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_concept"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="컨셉"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_flower"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_flower"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="철릭"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_health"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_health"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="건강"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/btn_filter_old_fashion"
+                            android:layout_width="56dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/filiter_content_orange_background"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/txt_filter_old_fashion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nanum_square_bold"
+                                android:text="복고"
+                                android:textColor="#f2893e"
+                                android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffd3d3" />
+            // 목적
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:text="목적"
+                    android:textColor="#eb5f4c"
+                    android:textSize="14sp" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_picnic"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_picnic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="나들이"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_party"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_party"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="돌잔치"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_wedding"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_wedding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="결혼식"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_graduation"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_graduation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="졸업식"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffd3d3" />
+            // 장소
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:text="장소"
+                    android:textColor="#eb5f4c"
+                    android:textSize="14sp" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_place1"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_place1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="경복궁"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/btn_filter_place2"
+                        android:layout_width="56dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/filiter_content_orange_background"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/txt_filter_place2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanum_square_bold"
+                            android:text="전주"
+                            android:textColor="#f2893e"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_filter_outcome"
+            android:layout_width="260dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/filter_content_outcome_background"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:gravity="center"
+            android:text="나만의 한복찾기"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    <RelativeLayout
+            android:id="@+id/btn_filter_filter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="6dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/filter_recommendservice_btn" />
+        <TextView
+                android:text="추천 서비스"
+                android:textSize="12sp"
+                android:textColor="#eb5f4c"
+                android:fontFamily="@font/nanum_square_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
